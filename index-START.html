@@ -61,6 +61,9 @@ slider.addEventListener("mousemove", (e) => {
     console.count(isDown);  
     e.preventDefault(); //Stop things being selected here
     const x = e.pageX - slider.offsetLeft;
+    console.log(x, startX);
+    const move = x - startX;
+    console.log(move);
 });
 </script>
 
