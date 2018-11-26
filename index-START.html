@@ -64,6 +64,7 @@ slider.addEventListener("mousemove", (e) => {
     console.log(x, startX);
     const move = x - startX;
     console.log(move);
+    slider.scrollLeft = scrollLeft - move;
 });
 </script>
 
