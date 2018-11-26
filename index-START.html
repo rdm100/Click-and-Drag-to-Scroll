@@ -55,10 +55,12 @@ slider.addEventListener("mouseup", () => {
     isDown = false;
     slider.classList.remove('active');
 });
-slider.addEventListener("mousemove", () => {
+slider.addEventListener("mousemove", (e) => {
     if(!isDown) return; //stop function from running
     console.log(isDown);
-    console.count(isDown);    
+    console.count(isDown);  
+    e.preventDefault(); //Stop things being selected here
+    const x = e.pageX - slider.offsetLeft;
 });
 </script>
 
